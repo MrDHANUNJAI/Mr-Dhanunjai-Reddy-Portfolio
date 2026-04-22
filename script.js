@@ -73,6 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
     skills.classList.remove('hidden');
     works.classList.remove('hidden');
     footer.classList.remove('hidden');
+    experience.classList.remove('hidden');
+    projects.classList.remove('hidden');
+    publications.classList.remove('hidden');
+    achievements.classList.remove('hidden');
 
     // start particles
     if (!particlesStarted && ctx) startParticles();
@@ -336,3 +340,121 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const bars = entry.target.querySelectorAll(".progress");
+
+      bars.forEach(bar => {
+        bar.style.width = bar.getAttribute("data-width");
+      });
+    }
+  });
+}, { threshold: 0.3 });
+
+observer.observe(document.querySelector("#skills"));
+
+
+
+
+const expObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll(".timeline-content").forEach((el, i) => {
+        setTimeout(() => {
+          el.style.opacity = 1;
+          el.style.transform = "translateY(0)";
+        }, i * 200);
+      });
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll(".experience-section").forEach(section => {
+  section.querySelectorAll(".timeline-content").forEach(el => {
+    el.style.opacity = 0;
+    el.style.transform = "translateY(20px)";
+  });
+
+  expObserver.observe(section);
+});
+
+
+
+
+ document.addEventListener("DOMContentLoaded", () => {
+
+  // ================= CONTACT MODAL =================
+  const contactModal = document.getElementById("contactModal");
+  const openBtn = document.getElementById("openModal");
+  const closeContactBtn = document.getElementById("closeModal");
+  const cancelBtn = document.getElementById("modalCancel");
+
+  // Open modal
+  openBtn.addEventListener("click", () => {
+    contactModal.classList.remove("hidden");
+  });
+
+  // Close modal (X button)
+  closeContactBtn.addEventListener("click", () => {
+    contactModal.classList.add("hidden");
+  });
+
+  // Close modal (Cancel button)
+  cancelBtn.addEventListener("click", () => {
+    contactModal.classList.add("hidden");
+  });
+
+  // Close when clicking outside
+  window.addEventListener("click", (e) => {
+    if (e.target === contactModal) {
+      contactModal.classList.add("hidden");
+    }
+  });
+
+
+  // ================= IMAGE MODAL =================
+  const imgModal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeImgBtn = document.querySelector(".close");
+
+  const images = document.querySelectorAll(".slide img");
+
+  // Open image modal
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      imgModal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  // Close image modal
+  closeImgBtn.addEventListener("click", () => {
+    imgModal.style.display = "none";
+  });
+
+  // Close when clicking outside image
+  imgModal.addEventListener("click", (e) => {
+    if (e.target === imgModal) {
+      imgModal.style.display = "none";
+    }
+  });
+
+});
+
+
+const cards = document.querySelectorAll(".testimonial-card");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      cards.forEach(c => c.classList.remove("active"));
+      card.classList.add("active");
+    });
+  });
+
+
+  
