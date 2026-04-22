@@ -23,198 +23,964 @@
   <div id="app">
     <!-- ========== YOUR ORIGINAL WELCOME (UNCHANGED) ========== -->
     <section id="welcome" class="page page--welcome">
-      <div class="deck-wrapper">
-        <!-- Left Deck -->
-        <div class="deck left-deck">
-          <img src="thumbnails/Untitled-1.png" alt="Design 1" class="card-img" />
-          <img src="thumbnails/solo.jpg" alt="Design 2" class="card-img" />
-          <img src="thumbnails/edited.jpg" alt="Design 3" class="card-img" />
-        </div>
+  <div class="welcome-inner">
 
-        <!-- Center Welcome Text -->
-        <div class="welcome-inner">
-          <h1 class="welcome-title">
-            Welcome to<br><span class="name-glow">Dhanunjai Reddy Kristipati</span>
-          </h1>
-          <p class="welcome-sub">Creative Designer • AI Developer • Web Creator</p>
-          <button id="btnExplore" class="btn btn--lg neon-btn">Explore ↓</button>
-        </div>
+    <h1 class="welcome-title">
+      Hi, I'm <br>
+      <span class="name-glow">Dhanunjai Reddy Kristipati</span>
+    </h1>
 
-        <!-- Right Deck -->
-        <div class="deck right-deck">
-          <img src="thumbnails/last surviver.jpeg" alt="Design 4" class="card-img" />
-          <img src="thumbnails/minecraft.jpg" alt="Design 5" class="card-img" />
-          <img src="thumbnails/solo.jpg" alt="Design 6" class="card-img" />
-        </div>
+    <p class="welcome-sub">
+      AI Developer • Full Stack Engineer • Technical Mentor
+    </p>
+
+    <p class="welcome-desc">
+      I build intelligent AI systems, smart IoT solutions, and scalable web applications.
+      Passionate about innovation, teaching, and solving real-world problems.
+    </p>
+
+    <!-- Highlights -->
+    <div class="welcome-highlights">
+      <div class="highlight-box">
+        <h3>100+</h3>
+        <p>AI Features Built</p>
       </div>
 
-      <div class="welcome-decor">
-        <div class="shape s1"></div>
-        <div class="shape s2"></div>
+      <div class="highlight-box">
+        <h3>1K+</h3>
+        <p>YouTube Audience</p>
       </div>
-    </section>
+
+      <div class="highlight-box">
+        <h3>5+</h3>
+        <p>Major Projects</p>
+      </div>
+
+      <div class="highlight-box">
+        <h3>Winner</h3>
+        <p>State-Level Expo</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="welcome-actions">
+      <button id="btnExplore" class="btn btn--lg neon-btn">
+        Explore ↓
+      </button>
+
+      <a href="#projects" class="btn btn--outline">
+        View Projects
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Background Effects -->
+  <div class="welcome-bg">
+    <div class="gradient"></div>
+    <div class="glow-circle c1"></div>
+    <div class="glow-circle c2"></div>
+  </div>
+</section>
 
     <!-- ========== NAV (hidden until Explore) ========== -->
-    <nav class="nav-float hidden" aria-label="Primary">
-      <a href="#welcome" class="nav-logo" data-scroll>DRK</a>
-      <div class="nav-links">
-        <a href="#intro" data-scroll>About</a>
-        <a href="#skills" data-scroll>Skills</a>
-        <a href="#works" data-scroll>Works</a>
-        <a href="#contact" id="contactBtnNav">Contact</a>
+   <!-- ========== FLOAT NAV (UPGRADED) ========== -->
+<nav class="nav-float hidden" aria-label="Primary">
+  <div class="nav-container">
+    <a href="#welcome" class="nav-logo" data-scroll>
+      <span class="logo-glow">DRK</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#intro" data-scroll>About</a>
+      <a href="#skills" data-scroll>Skills</a>
+      <a href="#works" data-scroll>Projects</a>
+     <a href="#" id="openModal" class="nav-cta btn btn-primary">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== INTRO (PRO FUTURISTIC) ========== -->
+<main id="mainContent">
+  <section id="intro" class="page page--intro hidden">
+    <div class="intro-inner">
+
+      <!-- LEFT SIDE (PROFILE + EFFECTS) -->
+      <div class="profile-left">
+        <div class="profile-frame tilt">
+
+          <img id="profileImg" src="Gemini_Generated_Image_spv497spv497spv4.png" alt="Dhanunjai">
+
+          <!-- Glow Ring -->
+          <div class="ring"></div>
+
+          <!-- Floating Badge -->
+          <div class="badge">AI • DEV • CREATOR</div>
+
+        </div>
       </div>
-    </nav>
 
-    <!-- ========== INTRO (futuristic) ========== -->
-    <main id="mainContent">
-      <section id="intro" class="page page--intro hidden">
-        <div class="intro-inner">
-          <div class="profile-left">
-            <div class="profile-frame tilt">
-              <img id="profileImg" src="Gemini_Generated_Image_spv497spv497spv4.png" alt="Dhanunjai">
-              <div class="photo-glow"></div>
-            </div>
+      <!-- RIGHT SIDE (CONTENT) -->
+      <div class="profile-right">
+
+        <h2 class="hi">
+          Hello, I'm <span class="neon">Dhanunjai Reddy</span>
+        </h2>
+
+        <h3 class="tagline">
+          <span id="typed"></span>
+        </h3>
+
+        <p class="bio">
+          I design and build intelligent systems combining <strong>AI, IoT, and Full-Stack Development</strong>.
+          From JARVIS-style assistants to scalable web platforms, I focus on real-world innovation and impactful solutions.
+        </p>
+
+        <!-- INFO GRID -->
+        <div class="info-grid">
+          <div><span>🎓</span> Diploma — CSE (2025–2027)</div>
+          <div><span>📍</span> Andhra Pradesh, India</div>
+          <div><span>💡</span> AI • Web • IoT • Teaching</div>
+          <div><span>🏆</span> State-Level Winner</div>
+        </div>
+
+        <!-- SOCIAL + ACTION -->
+        <div class="action-row">
+
+      <div class="social-row">
+  <a class="social" href="https://youtube.com/@sbg-labs?si=QW9lgLXNuhsVhQap" target="_blank" title="YouTube">YT</a>
+  
+  <a class="social" href="https://github.com/MrDHANUNJAI" target="_blank" title="GitHub">GH</a>
+  
+  <a class="social" href="https://wa.me/918247505768" target="_blank" title="WhatsApp">WA</a>
+  
+  <a class="social" href="https://www.linkedin.com/in/dhanunjai-reddy-kristipati/" target="_blank" title="LinkedIn">IN</a>
+  
+  <a class="social" href="mailto:kristipatidhanunjaireddy94@gmail.com" title="Email">✉</a>
+</div>
+
+          <a href="#" id="openModal" class="nav-cta btn btn-primary">Hire Me</a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="intro-bg">
+      <div class="grid"></div>
+      <div class="blur b1"></div>
+      <div class="blur b2"></div>
+    </div>
+
+  </section>
+</main>
+
+<section id="skills" class="page skills-section hidden">
+  <div class="container">
+
+    <h2 class="section-title">Skills & Expertise</h2>
+    <p class="section-sub">
+      A blend of software, AI, and system engineering skills to build intelligent solutions.
+    </p>
+
+    <div class="skills-box">
+
+      <!-- Frontend -->
+      <div class="skill-group">
+        <h3>Frontend Development</h3>
+        <div class="chips">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>React</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-group">
+        <h3>Backend Development</h3>
+        <div class="chips">
+          <span>Node.js</span><span>Express.js</span>
+          <span>REST APIs</span><span>Firebase</span>
+        </div>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-group">
+        <h3>Database Management</h3>
+        <div class="chips">
+          <span>MySQL</span><span>MongoDB</span>
+        </div>
+      </div>
+
+      <!-- AI -->
+      <div class="skill-group">
+        <h3>AI & Machine Learning</h3>
+        <div class="chips">
+          <span>Python</span><span>TensorFlow</span>
+          <span>OpenCV</span><span>Scikit-learn</span>
+          <span>Deep Learning</span><span>NLP</span>
+          <span>Computer Vision</span><span>Generative AI</span>
+          <span>Chatbot Development</span>
+        </div>
+      </div>
+
+      <!-- IoT -->
+      <div class="skill-group">
+        <h3>IoT & Embedded Systems</h3>
+        <div class="chips">
+          <span>ESP32</span><span>Raspberry Pi</span>
+          <span>MQTT</span><span>Sensor Integration</span>
+          <span>Cloud Communication</span>
+        </div>
+      </div>
+
+      <!-- Programming -->
+      <div class="skill-group">
+        <h3>Programming Languages</h3>
+        <div class="chips">
+          <span>C</span><span>C++</span><span>Python</span>
+        </div>
+      </div>
+
+      <!-- Simulation -->
+      <div class="skill-group">
+        <h3>Simulation & Modeling</h3>
+        <div class="chips">
+          <span>Simulink</span><span>PSIM</span>
+          <span>Webots</span><span>Blender</span>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="skill-group">
+        <h3>UI/UX & Graphic Design</h3>
+        <div class="chips">
+          <span>Figma</span><span>Canva</span>
+          <span>Adobe Photoshop</span><span>Adobe Illustrator</span>
+        </div>
+      </div>
+
+      <!-- IT -->
+      <div class="skill-group">
+        <h3>IT & System Administration</h3>
+        <div class="chips">
+          <span>Hardware Maintenance</span>
+          <span>Networking</span>
+          <span>System Administration</span>
+          <span>Infrastructure Setup</span>
+          <span>Troubleshooting</span>
+        </div>
+      </div>
+
+      <!-- OS -->
+      <div class="skill-group">
+        <h3>Operating Systems</h3>
+        <div class="chips">
+          <span>Windows</span><span>Linux</span>
+        </div>
+      </div>
+
+      <!-- Docs -->
+      <div class="skill-group">
+        <h3>Documentation & Tools</h3>
+        <div class="chips">
+          <span>LaTeX</span><span>MS Office</span>
+          <span>PowerPoint</span>
+        </div>
+      </div>
+
+      <!-- Soft -->
+      <div class="skill-group">
+        <h3>Professional Skills</h3>
+        <div class="chips">
+          <span>Teaching</span><span>Mentoring</span>
+          <span>Project Coordination</span>
+          <span>Problem Solving</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="experience" class="page experience-section hidden">
+  <div class="container">
+
+    <h2 class="section-title">Experience</h2>
+    <p class="section-sub">
+      Real-world roles where I built, managed, and taught technology.
+    </p>
+
+    <div class="timeline">
+
+      <!-- ITEM -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Web Developer Intern</h3>
+          <h4>Golden Valley Integrated Campus</h4>
+          <span class="time">2024-2025</span>
+          <p>
+            Built full-stack web applications using React, Node.js, and MySQL.
+            Developed REST APIs, authentication systems, and responsive UI.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>System Administrator</h3>
+          <h4>Golden Valley Integrated Campus</h4>
+          <span class="time">2025</span>
+          <p>
+            Managed Linux systems, networking, and campus infrastructure.
+            Handled troubleshooting, installations, and system operations.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Lab Instructor (IT Workshop)</h3>
+          <h4>Golden Valley Integrated Campus</h4>
+          <span class="time">2024-2025</span>
+          <p>
+            Conducted practical programming sessions and guided students.
+            Maintained lab systems and supported academic activities.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Technical Mentor & Trainer</h3>
+          <h4>Kuppam Engineering College</h4>
+          <span class="time">2026</span>
+          <p>
+            Delivered workshops on AI and IoT.
+            Mentored students in project development and technical skills.
+          </p>
+        </div>
+      </div>
+
+       <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Technical Mentor</h3>
+          <h4>AGASTYA ANVESHANA PROGRAM</h4>
+          <span class="time">2026</span>
+          <p>
+            Worked As Mentor For Studets And Won The Best Mentor Award.
+            Mentored students in project development and technical skills.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="projects" class="page projects-section hidden">
+  <div class="container">
+
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">
+      Real-world systems built with AI, Web, and IoT technologies.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Bittu AI Assistant</h3>
+          <p>
+            Voice-controlled AI assistant with 100+ features including system automation,
+            chatbot integration, and JARVIS-style interface.
+          </p>
+
+          <div class="tags">
+            <span>Python</span><span>AI</span><span>Voice</span><span>Automation</span>
           </div>
 
-          <div class="profile-right">
-            <h2 class="hi">Hello — I’m <span class="neon">Dhanunjai</span></h2>
-            <h3 class="tagline"><span id="typed"></span></h3>
-            <p class="bio">I merge design with AI to craft experiences that are visually stunning and technologically advanced. I specialize in brand identity, UI/UX, AI automation, and interactive web solutions.</p>
-
-            <ul class="info-list">
-              <li><strong>Course:</strong> Diploma — Computer Management Engineering (2025–2027)</li>
-              <li><strong>Location:</strong> Kadapa, Andhra Pradesh</li>
-              <li><strong>Email:</strong> <a href="mailto:bunnykristipatidhanu123@gmail.com">bunnykristipatidhanu123@gmail.com</a></li>
-            </ul>
-
-            <div class="social-row">
-              <a class="social" href="https://www.youtube.com/" target="_blank" title="YouTube">YT</a>
-              <a class="social" href="https://github.com/" target="_blank" title="GitHub">GH</a>
-              <a class="social" href="https://wa.me/918247505768" target="_blank" title="WhatsApp">WA</a>
-              <a class="social" href="https://linkedin.com/" target="_blank" title="LinkedIn">IN</a>
-              <a class="social" href="mailto:bunnykristipatidhanu123@gmail.com" title="Email">✉</a>
-            </div>
+          <div class="project-links">
+            <a href="#" class="btn small">Live</a>
+            <a href="#" class="btn outline small">Code</a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- ========== SKILLS (futuristic) ========== -->
-      <section id="skills" class="page skills-section hidden">
-        <div class="container">
-          <h2 class="section-title">Skills & Expertise</h2>
-          <p class="section-sub">The perfect fusion of creativity, logic, and innovation.</p>
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>AURA Scan</h3>
+          <p>
+            Automated web vulnerability scanner detecting OWASP Top-10 risks.
+            Published research with real-world security applications.
+          </p>
 
-          <div class="skills-grid">
-            <div class="skill-card skill-radial">
-              <svg class="radial" viewBox="0 0 120 120" data-skill="92"><circle cx="60" cy="60" r="48" class="bg"/><circle cx="60" cy="60" r="48" class="fg"/></svg>
-              <div>
-                <h3>Graphic Design</h3>
-                <p>Figma • Photoshop • Illustrator • Branding</p>
-              </div>
-            </div>
+          <div class="tags">
+            <span>Cybersecurity</span><span>Python</span><span>Scanner</span>
+          </div>
 
-            <div class="skill-card skill-radial">
-              <svg class="radial" viewBox="0 0 120 120" data-skill="86"><circle cx="60" cy="60" r="48" class="bg"/><circle cx="60" cy="60" r="48" class="fg"/></svg>
-              <div>
-                <h3>Web Development</h3>
-                <p>HTML • CSS • JavaScript • React • Node</p>
-              </div>
-            </div>
-
-            <div class="skill-card skill-radial">
-              <svg class="radial" viewBox="0 0 120 120" data-skill="80"><circle cx="60" cy="60" r="48" class="bg"/><circle cx="60" cy="60" r="48" class="fg"/></svg>
-              <div>
-                <h3>AI & ML</h3>
-                <p>Python • TensorFlow • OpenCV • NLP</p>
-              </div>
-            </div>
-
-            <div class="skill-card skill-radial">
-              <svg class="radial" viewBox="0 0 120 120" data-skill="72"><circle cx="60" cy="60" r="48" class="bg"/><circle cx="60" cy="60" r="48" class="fg"/></svg>
-              <div>
-                <h3>IoT & Embedded</h3>
-                <p>Arduino • ESP32 • Sensors • Robotics</p>
-              </div>
-            </div>
+          <div class="project-links">
+            <a href="#" class="btn small">Paper</a>
+            <a href="#" class="btn outline small">Details</a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- ========== WORKS — upgraded / excellent ========== -->
-      <section id="works" class="page works-section hidden">
-        <div class="container">
-          <header class="works-header">
-            <div>
-              <h2>Selected Works</h2>
-              <p class="muted">Projects across design, AI prototypes, web apps and hardware. Click any card to open the fullscreen case view.</p>
-            </div>
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Smart Home System</h3>
+          <p>
+            AI-powered home automation using Raspberry Pi and cloud communication
+            for real-time device control and monitoring.
+          </p>
 
-            <div class="works-controls">
-              <div class="cat-row" role="tablist" aria-label="Project Categories">
-                <button class="cat active" data-cat="all" role="tab" aria-selected="true">All</button>
-                <button class="cat" data-cat="design" role="tab">Graphic Design</button>
-                <button class="cat" data-cat="ai" role="tab">AI Projects</button>
-                <button class="cat" data-cat="web" role="tab">Web Apps</button>
-                <button class="cat" data-cat="iot" role="tab">Hardware</button>
-              </div>
-            </div>
-          </header>
+          <div class="tags">
+            <span>IoT</span><span>Raspberry Pi</span><span>Automation</span>
+          </div>
 
-          <!-- Grid: 3 columns on desktop, 2 on tablet, 1 on mobile -->
-          <div id="workGrid" class="work-grid grid-pro">
-            <!-- Example items — replace images and data as needed -->
-            <article class="work" data-cat="design" tabindex="0" aria-label="Branding — Spark">
-              <div class="work-thumb">
-                <img src="thumbnails/last surviver.jpeg" alt="Branding Spark">
-                <div class="work-overlay">
-                  <div class="work-tags">Graphic Design</div>
-                  <h3 class="work-title">minecraft Thumbnails</h3>
-                </div>
-              </div>
-              <div class="work-meta">
-                <p class="muted">These are the samples of the graphical design works </p>
-              </div>
-            </article>
-
-            <article class="work" data-cat="ai" tabindex="0" aria-label="Bittu AI">
-              <div class="work-thumb">
-                <img src="thumbnails/editer.jpg" alt="Bittu AI">
-                <div class="work-overlay">
-                  <div class="work-tags">Graphic Design</div>
-                  <h3 class="work-title">Thumbnails</h3>
-                </div>
-              </div>
-              <div class="work-meta"><p class="muted">These are the samples of the graphical design works </p></div>
-            </article>
-
-            <article class="work" data-cat="web" tabindex="0" aria-label="Portfolio v1">
-              <div class="work-thumb">
-                <img src="thumbnails/edited.jpg" alt="Portfolio v1">
-                <div class="work-overlay">
-                  <div class="work-tags">Graphic Design</div>
-                  <h3 class="work-title">Thumbnails</h3>
-                </div>
-              </div>
-              <div class="work-meta"><p class="muted">These are the samples of the graphical design works.</p></div>
-            </article>
-
-            <article class="work" data-cat="iot" tabindex="0" aria-label="EV Charging Prototype">
-              <div class="work-thumb">
-                <img src="thumbnails/Airbrush-image-extender.jpeg" alt="EV Charging">
-                <div class="work-overlay">
-                  <div class="work-tags">Graphic Design</div>
-                  <h3 class="work-title">thumbnails</h3>
-                </div>
-              </div>
-              <div class="work-meta"><p class="muted">These are the samples of the graphical design works </p></div>
-            </article>
-
-            <!-- add more project cards here -->
+          <div class="project-links">
+            <a href="#" class="btn small">Demo</a>
+            <a href="#" class="btn outline small">Code</a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- ========== CONTACT modal (hidden initially) ========== -->
+      <!-- PROJECT 4 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>College Portal</h3>
+          <p>
+            Full-stack web application with authentication, admin dashboard,
+            and database integration for institutional management.
+          </p>
+
+          <div class="tags">
+            <span>React</span><span>Node</span><span>MySQL</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="btn small">Live</a>
+            <a href="#" class="btn outline small">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Wireless EV System</h3>
+          <p>
+            Prototype for wireless charging and control system addressing
+            efficiency challenges in electric vehicles.
+          </p>
+
+          <div class="tags">
+            <span>EV</span><span>Wireless</span><span>Hardware</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="btn small">Concept</a>
+            <a href="#" class="btn outline small">Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="works" class="page works-section hidden">
+  <div class="container">
+
+    <h2 class="section-title">My Works</h2>
+    <p class="section-sub">
+      Creative designs, client projects, and visual experiences.
+    </p>
+
+    <div class="works-grid">
+
+      <!-- ITEM -->
+      <div class="work-card">
+        <img src="thumbnails/Airbrush-image-extender.jpeg" alt="Design">
+        <div class="work-overlay">
+          <h3>YouTube Thumbnail</h3>
+          <p>Gaming / Tech Content</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="thumbnails/edited.jpg" alt="Design">
+        <div class="work-overlay">
+          <h3>Poster Design</h3>
+          <p>Creative Branding</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="thumbnails/editer.jpg" alt="Design">
+        <div class="work-overlay">
+          <h3>Photo Editing</h3>
+          <p>Advanced Retouching</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="thumbnails/last surviver.jpeg" alt="Design">
+        <div class="work-overlay">
+          <h3>Gaming Thumbnail</h3>
+          <p>High CTR Design</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="thumbnails/minecraft.jpg" alt="Design">
+        <div class="work-overlay">
+          <h3>Client Work</h3>
+          <p>Freelance Project</p>
+        </div>
+      </div>
+      <div class="work-card">
+        <img src="thumbnails/new world.png" alt="Design">
+        <div class="work-overlay">
+          <h3>Client Work</h3>
+          <p>Freelance Project</p>
+        </div>
+      </div>
+      <div class="work-card">
+        <img src="thumbnails/solo.jpg" alt="Design">
+        <div class="work-overlay">
+          <h3>Client Work</h3>
+          <p>Freelance Project</p>
+        </div>
+      </div>
+      <div class="work-card">
+        <img src="thumbnails/Untitled-1.png" alt="Design">
+        <div class="work-overlay">
+          <h3>Client Work</h3>
+          <p>Freelance Project</p>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </div>
+</section>
+
+
+<section id="publications" class="page publications-section hidden">
+  <div class="container">
+
+    <h2 class="section-title">Publications</h2>
+    <p class="section-sub">
+      Research work and technical contributions in cybersecurity and AI.
+    </p>
+
+    <div class="pub-card">
+
+      <div class="pub-left">
+        <div class="pub-icon">📄</div>
+      </div>
+
+      <div class="pub-right">
+        <h3>AURA-SCAN: Lightweight Web Vulnerability Scanner</h3>
+
+        <p class="pub-desc">
+          Developed an automated security tool to detect OWASP Top-10 vulnerabilities
+          in web applications. Focused on performance, accuracy, and lightweight scanning.
+        </p>
+
+        <div class="pub-meta">
+          <span>📅 March 7, 2026</span>
+          <span>🏛 Zenodo (CERN)</span>
+          <span>👨‍💻 Project Leader</span>
+        </div>
+
+        <div class="pub-links">
+          <a href="https://doi.org/10.5281/zenodo.18899157" target="_blank" class="btn small">
+            View Paper
+          </a>
+          <a href="#" class="btn outline small">
+            Details
+          </a>
+        </div>
+
+        
+      </div>
+
+    </div>
+
+<!-- PUBLICATION 2 -->
+<div class="pub-card">
+
+  <div class="pub-left">
+    <div class="pub-icon">🤖</div>
+  </div>
+
+  <div class="pub-right">
+    <h3>Development of Personal AI Assistant</h3>
+
+    <p class="pub-desc">
+      Designed and developed a personal AI assistant capable of voice interaction,
+      automation tasks, and intelligent responses for enhanced user productivity.
+    </p>
+
+    <div class="pub-meta">
+      <span>📅 April 5, 2026</span>
+      <span>🏛 Zenodo</span>
+      <span>👨‍💻 Author</span>
+    </div>
+
+    <div class="pub-links">
+      <a href="https://zenodo.org/doi/10.5281/zenodo.19430230" target="_blank" class="btn small">
+        View Paper
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- PUBLICATION 3 -->
+<div class="pub-card">
+
+  <div class="pub-left">
+    <div class="pub-icon">⚡</div>
+  </div>
+
+  <div class="pub-right">
+    <h3>Wireless Charging & Control System for Electric Vehicles</h3>
+
+    <p class="pub-desc">
+      Proposed and implemented a wireless charging and control system for EVs,
+      improving efficiency and enabling remote energy transfer solutions.
+    </p>
+
+    <div class="pub-meta">
+      <span>📅 March 21, 2026</span>
+      <span>🏛 Zenodo</span>
+      <span>👨‍💻 Author</span>
+    </div>
+
+    <div class="pub-links">
+      <a href="https://zenodo.org/doi/10.5281/zenodo.19151772" target="_blank" class="btn small">
+        View Paper
+      </a>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+
+
+<section id="achievements" class="page achievements-section">
+  <div class="container">
+
+    <h2 class="section-title">Achievements & Certifications</h2>
+    <p class="section-sub">
+      Recognition, awards, and milestones from my technical journey.
+    </p>
+
+    <div class="achievements-grid">
+
+      <!-- ITEM -->
+      <div class="achievement-card">
+        <div class="icon">🏆</div>
+        <h3>State-Level Winner</h3>
+        <p>Anveshana Innovation Program</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="icon">🥇</div>
+        <h3>5th Prize</h3>
+        <p>Regional & National Anveshana Expo</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="icon">🎖</div>
+        <h3>District Winner</h3>
+        <p>Science Exhibition</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="icon">🏅</div>
+        <h3>Outstanding Mentor</h3>
+        <p>Mentor of the Year Award</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="icon">🚀</div>
+        <h3>Runner-Up</h3>
+        <p>Cyratech Hackathon 2024</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="icon">📜</div>
+        <h3>RBI Quiz Certified</h3>
+        <p>2 Times National Level</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="icon">🤖</div>
+        <h3>AI in Robotics</h3>
+        <p>Certification - TeckyBot</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="icon">🎤</div>
+        <h3>Technical Presentation</h3>
+        <p>JNTUA Pulivendula</p>
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+</section>
+<!-- ========== TESTIMONIALS SECTION ========== -->
+<section class="testimonials-section">
+  <h2 class="section-title">Client Testimonials</h2>
+
+  <!-- Row 1 -->
+  <div class="marquee">
+    <div class="marquee-content">
+
+      <!-- 10+ Cards -->
+      <div class="testimonial-card">
+        <p>"Amazing portfolio design! Very modern and smooth."</p>
+        <h4>Rohit Sharma</h4>
+        <span>Portfolio Design</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"My YouTube thumbnails CTR increased a lot!"</p>
+        <h4>Priya Reddy</h4>
+        <span>Thumbnail Design</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Clean and bug-free code delivery."</p>
+        <h4>Arjun Kumar</h4>
+        <span>Web Development</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Poster designs were super creative."</p>
+        <h4>Sneha Patel</h4>
+        <span>Poster Design</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Video editing quality is top notch!"</p>
+        <h4>Rahul Verma</h4>
+        <span>Video Editing</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Helped me complete my major project easily."</p>
+        <h4>Kiran Naidu</h4>
+        <span>Major Projects</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Very fast debugging support."</p>
+        <h4>Anjali Singh</h4>
+        <span>Debugging</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Professional document writing."</p>
+        <h4>Vikram Rao</h4>
+        <span>Documentation</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Photo editing was stunning!"</p>
+        <h4>Meena Iyer</h4>
+        <span>Photo Editing</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Coding skills are excellent."</p>
+        <h4>Harsha Vardhan</h4>
+        <span>Coding</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="marquee reverse">
+    <div class="marquee-content">
+
+      <!-- 10+ Cards -->
+      <div class="testimonial-card">
+        <p>"Highly recommend for web projects."</p>
+        <h4>Deepak Reddy</h4>
+        <span>Web Development</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Very creative thumbnails."</p>
+        <h4>Pooja Sharma</h4>
+        <span>Thumbnail Design</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Poster designs boosted my event reach."</p>
+        <h4>Naveen Kumar</h4>
+        <span>Poster Design</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Smooth UI and UX work."</p>
+        <h4>Swathi Reddy</h4>
+        <span>Portfolio Design</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Editing work is cinematic."</p>
+        <h4>Ajay Verma</h4>
+        <span>Video Editing</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Great support for mini projects."</p>
+        <h4>Teja Naidu</h4>
+        <span>Mini Projects</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Solved complex bugs quickly."</p>
+        <h4>Ramesh Gupta</h4>
+        <span>Debugging</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Documentation was clear and structured."</p>
+        <h4>Divya Patel</h4>
+        <span>Documentation</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Creative photo retouching."</p>
+        <h4>Neha Iyer</h4>
+        <span>Photo Editing</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Very efficient coding work."</p>
+        <h4>Sai Krishna</h4>
+        <span>Coding</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="achievements" class="page achievements-section">
+  <div class="container">
+
+    <h2 class="section-title">Achievements</h2>
+    <p class="section-sub">
+      Highlights from competitions, certifications, and recognitions.
+    </p>
+
+    <div class="achievements-slider">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="slide">
+          <img src="achievements/ACHIEVEMENT1.jpeg" alt="Achievement 1">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.26 AM.jpeg" alt="Achievement 2">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.28 AM (1).jpeg" alt="Achievement 3">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.28 AM (2).jpeg" alt="Achievement 4">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.28 AM.jpeg" alt="Achievement 5">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.29 AM.jpeg" alt="Achievement 6">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.32 AM (1).jpeg" alt="Achievement 7">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.32 AM (2).jpeg" alt="Achievement 8">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.32 AM.jpeg" alt="Achievement 9">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.33 AM (1).jpeg" alt="Achievement 10">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.33 AM.jpeg" alt="Achievement 11">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.34 AM (1).jpeg" alt="Achievement 12">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.34 AM (2).jpeg" alt="Achievement 13">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.34 AM.jpeg" alt="Achievement 14">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.35 AM.jpeg" alt="Achievement 15">
+        </div>
+
+        <div class="slide">
+          <img src="achievements/WhatsApp Image 2026-04-19 at 10.44.36 AM.jpeg" alt="Achievement 16">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="img-modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+</section>      <!-- ========== CONTACT modal (hidden initially) ========== -->
       <div id="contactModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
         <div class="modal-panel glass">
           <button class="modal-close" id="closeModal" aria-label="Close contact">✕</button>
@@ -232,12 +998,58 @@
         </div>
       </div>
 
-      <!-- ========== FOOTER ========== -->
-      <footer class="site-footer hidden">
-        <div class="container">
-          <small>© <span id="year"></span> Dhanunjai Reddy Kristipati — Built with ❤️ & code</small>
-        </div>
-      </footer>
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer hidden">
+  <div class="container footer-grid">
+
+    <!-- About -->
+    <div class="footer-col">
+      <h3>Dhanunjai Reddy</h3>
+      <p>
+        Passionate EEE student focused on innovation, embedded systems,
+        and AI-driven solutions. Building futuristic tech projects.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#publications">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: dhanunjai@example.com</p>
+      <p>Phone: +91 8247505768</p>
+      <p>Location: Andhra Pradesh, India</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-col">
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="#" target="_blank">🌐</a>
+        <a href="#" target="_blank">💼</a>
+        <a href="#" target="_blank">🐙</a>
+        <a href="#" target="_blank">📸</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <small>
+      © <span id="year"></span> Dhanunjai Reddy Kristipati — Built with ❤️ & Code
+    </small>
+  </div>
+</footer>
     </main>
   </div>
 
